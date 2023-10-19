@@ -1,0 +1,13 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pod
+  labels:
+    app: test-pod
+    tier: api
+spec:
+  containers:
+  - name: test-pod  
+    image: test1:v1
+    imagePullPolicy: Never
+  restartPolicy: Never
